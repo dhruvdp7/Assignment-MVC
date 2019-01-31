@@ -24,8 +24,10 @@ public class CalculatorController{
 	try{
 			num1=view.getNum1();
 			num2=view.getNum2();
+		
+			int result=num1+num2;
 			
-			model.add(num1,num2);
+			model.setResult(result);
 
 			view.setSolution(model.getResult());
 
